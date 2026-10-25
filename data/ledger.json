@@ -1,0 +1,86 @@
+[
+  {
+    "id": "led_dev_1792655321300_dekt",
+    "timestamp": "2026-10-22T07:48:41.300Z",
+    "type": "ACCRUAL",
+    "recipient": "0x6e34f343438f90ff82619b470ccddf5bcc016f6e",
+    "role": "DEV",
+    "graveAddress": "0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d",
+    "amountEth": 0.0003,
+    "viewId": "view_1792655321300_rrk2f",
+    "payoutId": null,
+    "notes": "60% dev reward from qualified view"
+  },
+  {
+    "id": "led_plt_1792655321321_wl5k",
+    "timestamp": "2026-10-22T07:48:41.300Z",
+    "type": "ACCRUAL",
+    "recipient": "0x000000000000000000000000000000000000dead",
+    "role": "PLATFORM",
+    "graveAddress": "0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d",
+    "amountEth": 0.00005,
+    "viewId": "view_1792655321300_rrk2f",
+    "payoutId": null,
+    "notes": "10% protocol maintenance fee"
+  },
+  {
+    "id": "led_dev_1792655365337_nr04",
+    "timestamp": "2026-10-22T07:49:25.337Z",
+    "type": "ACCRUAL",
+    "recipient": "0x6e34f343438f90ff82619b470ccddf5bcc016f6e",
+    "role": "DEV",
+    "graveAddress": "0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d",
+    "amountEth": 0.0003,
+    "viewId": "view_1792655365337_vlsnw",
+    "payoutId": null,
+    "notes": "60% dev reward from qualified view"
+  },
+  {
+    "id": "led_hld_1792655365362_u5vs",
+    "timestamp": "2026-10-22T07:49:25.337Z",
+    "type": "ACCRUAL",
+    "recipient": "0x3114936fe0c4629d6e515cc8f8289b7d504995af",
+    "role": "HOLDER",
+    "graveAddress": "0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d",
+    "amountEth": 0.00015,
+    "viewId": "view_1792655365337_vlsnw",
+    "payoutId": null,
+    "notes": "30% original holder visit reward"
+  },
+  {
+    "id": "led_plt_1792655365387_k5db",
+    "timestamp": "2026-10-22T07:49:25.337Z",
+    "type": "ACCRUAL",
+    "recipient": "0x000000000000000000000000000000000000dead",
+    "role": "PLATFORM",
+    "graveAddress": "0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d",
+    "amountEth": 0.00005,
+    "viewId": "view_1792655365337_vlsnw",
+    "payoutId": null,
+    "notes": "10% protocol maintenance fee"
+  },
+  {
+    "id": "led_claim_1792655610977_qmsp",
+    "timestamp": "2026-10-22T07:53:30.977Z",
+    "type": "CLAIM_PAID",
+    "recipient": "0x6e34f343438f90ff82619b470ccddf5bcc016f6e",
+    "role": "DEV",
+    "graveAddress": "0x0000000000000000000000000000000000000000",
+    "amountEth": 0.0006,
+    "viewId": null,
+    "payoutId": "payout_1792655606204_7qrrpz",
+    "notes": "Payout sent via tx 0x3c15625adc432fa8156a68ab4e176ba642c4991e026a7eaa05012777fb6c4c92"
+  },
+  {
+    "id": "led_claim_1792656124195_bfid",
+    "timestamp": "2026-10-22T08:02:04.195Z",
+    "type": "CLAIM_PAID",
+    "recipient": "0x3114936fe0c4629d6e515cc8f8289b7d504995af",
+    "role": "HOLDER",
+    "graveAddress": "0x0000000000000000000000000000000000000000",
+    "amountEth": 0.00015,
+    "viewId": null,
+    "payoutId": "payout_1792656121890_ky20kh",
+    "notes": "Payout sent via tx 0x530ff9cc94d69d25cc4a253733d4cdb5dab8c21cd1448c90d118f40baca01ac8"
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "tokensBuried": 2,
+  "totalGraveViews": 39,
+  "ethPaidOut": 0.0006,
+  "holdersRewarded": 1,
+  "buriedToday": 0,
+  "activeGraves": 2,
+  "recentEvents": [
+    {
+      "id": "payout_payout_1792641461892_qnjok3",
+      "type": "CLAIM_PAID",
+      "tokenSymbol": "ETH",
+      "tokenAddress": "0x3114936fe0c4629d6e515cc8f8289b7d504995af",
+      "amountEth": 0.00015,
+      "timestamp": "2026-10-22T03:57:41.892Z",
+      "description": "Payout of 0.0001 ETH completed"
+    },
+    {
+      "id": "payout_payout_1792640523633_syufyi",
+      "type": "CLAIM_PAID",
+      "tokenSymbol": "ETH",
+      "tokenAddress": "0x3114936fe0c4629d6e515cc8f8289b7d504995af",
+      "amountEth": 0.00015,
+      "timestamp": "2026-10-22T03:42:03.633Z",
+      "description": "Payout of 0.0001 ETH completed"
+    },
+    {
+      "id": "payout_payout_1792640496895_5cq7xn",
+      "type": "CLAIM_PAID",
+      "tokenSymbol": "ETH",
+      "tokenAddress": "0x6e34f343438f90ff82619b470ccddf5bcc016f6e",
+      "amountEth": 0.0003,
+      "timestamp": "2026-10-22T03:41:36.895Z",
+      "description": "Payout of 0.0003 ETH completed"
+    },
+    {
+      "id": "burial_0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d_2026-10-21T18:24:52.481Z",
+      "type": "BURIED",
+      "tokenSymbol": "AXO",
+      "tokenAddress": "0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d",
+      "timestamp": "2026-10-21T18:24:52.481Z",
+      "description": "$AXO was laid to rest"
+    },
+    {
+      "id": "burial_0xe35b3fe45395aef894d0ac00f22937e3e6a65249_2026-10-20T14:59:16.462Z",
+      "type": "BURIED",
+      "tokenSymbol": "GRAVEN",
+      "tokenAddress": "0xe35b3fe45395aef894d0ac00f22937e3e6a65249",
+      "timestamp": "2026-10-20T14:59:16.462Z",
+      "description": "$GRAVEN was laid to rest"
+    }
+  ],
+  "updatedAt": "2026-10-22T04:02:31.917Z"
+}

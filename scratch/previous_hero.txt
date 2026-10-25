@@ -1,0 +1,213 @@
+import { GraveRecord } from '@/lib/db/schemas';
+import { robinhoodExplorerUrl } from '@/lib/chain/config';
+import { HeroBackdrop } from './HeroBackdrop';
+import { HeroHeadline } from './HeroHeadline';
+
+interface HeroProps {
+  latestGrave: GraveRecord | null;
+}
+
+export function Hero({ latestGrave }: HeroProps) {
+  const router = useRouter();
+  const [caQuery, setCaQuery] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [searchError, setSearchError] = useState<string | null>(null);
+  const [timeAgo, setTimeAgo] = useState('recently');
+
+  const twitterUrl = process.env.NEXT_PUBLIC_TWITTER_URL;
+  const telegramUrl = process.env.NEXT_PUBLIC_TELEGRAM_URL;
+  const githubUrl = process.env.NEXT_PUBLIC_GITHUB_URL;
+
+  // Live ticking "X seconds ago"
+  useEffect(() => {
+    if (!latestGrave?.buriedAt) return;
+    const updateTick = () => {
+      const diffSec = Math.max(1, Math.floor((Date.now() - new Date(latestGrave.buriedAt).getTime()) / 1000));
+      if (diffSec < 60) {
+        setTimeAgo(`${diffSec}s ago`);
+      } else if (diffSec < 3600) {
+        setTimeAgo(`${Math.floor(diffSec / 60)}m ago`);
+      } else {
+        setTimeAgo(`${Math.floor(diffSec / 3600)}h ago`);
+      }
+    };
+    updateTick();
+    const interval = setInterval(updateTick, 1000);
+    return () => clearInterval(interval);
+  }, [latestGrave?.buriedAt]);
+
+  const handleSearch = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const clean = caQuery.trim();
+    if (!clean) return;
+
+    if (!isAddress(clean, { strict: false })) {
+      setSearchError('Invalid contract address. Enter an ERC-20 address (0x...)');
+      return;
+    }
+
+    setLoading(true);
+    setSearchError(null);
+
+    try {
+      const res = await fetch(`/api/graves/${clean.toLowerCase()}`, {
+        signal: AbortSignal.timeout(15000),
+      });
+
+      if (res.ok) {
+        router.push(`/grave/${clean.toLowerCase()}`);
+      } else {
+        router.push(`/bury?token=${clean.toLowerCase()}`);
+      }
+    } catch {
+      router.push(`/grave/${clean.toLowerCase()}`);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <section className="w-full border-b-[3px] border-[#0A0F2E] relative overflow-hidden">
+      {/* Continuous 7-Layer Background Texture (spanning left cell & right panel) */}
+      <HeroBackdrop />
+
+      <div className="grid grid-cols-1 lg:grid-cols-12 divide-y-[3px] lg:divide-y-0 lg:divide-x-[3px] divide-[#0A0F2E] items-stretch relative z-10">
+        {/* =========================================================================
+            LEFT CELL (Light text, AA contrast on dark background, 7 cols)
+           ========================================================================= */}
+        <div className="lg:col-span-7 p-6 sm:p-10 lg:p-12 flex flex-col justify-between relative bg-transparent overflow-hidden">
+          <div className="relative z-10">
+            {/* Tag pill "ROBINHOOD CHAIN" */}
+            <div className="bento-pill mb-6 w-fit mx-auto sm:mx-0 bg-white/8 text-[#F1F0FF] border-[1.5px] border-[#BFD8FF]/45">
+              <span className="w-2 h-2 rounded-full bg-[#1DB954] animate-pulse" />
+              <span>ROBINHOOD CHAIN</span>
+            </div>
+
+            {/* Headline with word-by-word entrance, gradient flow, and shimmering afterlife pill */}
+            <HeroHeadline />
+
+            {/* Subcopy (Inter, #D6DDFF at 100% opacity, 16 to 18px, line-height 1.6) */}
+            <p className="font-body text-[#D6DDFF] text-base sm:text-[17px] text-center sm:text-left leading-relaxed max-w-[460px] mx-auto sm:mx-0 mb-8 font-normal">
+              Bury dead tokens under real engraved gravestones. Original holders visit to unlock shared ETH rewards and honor digital monuments.
+            </p>
+
+            {/* Two buttons side by side (stacked full width on mobile) */}
+            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 w-full sm:w-auto mb-8">
+              <Link
+                href="/bury"
+                className="btn-bento btn-cyan text-xs sm:text-sm py-3 px-6 w-full sm:w-auto justify-center"
+              >
+                <span>BURY A TOKEN ↗</span>
+              </Link>
+              <Link
+                href="/how-it-works"
+                className="btn-bento text-xs sm:text-sm py-3 px-6 w-full sm:w-auto justify-center bg-transparent text-[#FFFFFF] border-[2.5px] border-[#F1F0FF] shadow-[4px_4px_0_#050A2E] hover:bg-white/10 active:translate-x-[2px] active:translate-y-[2px]"
+              >
+                <span>HOW IT WORKS ↓</span>
+              </Link>
+            </div>
+
+            {/* Restyled Working CA Search Form (Navy text on rgba(255,255,255,0.96) with #3B4170 placeholder) */}
+            <div className="w-full max-w-md mb-8 mx-auto sm:mx-0">
+              <form onSubmit={handleSearch} className="w-full">
+                <div className="relative flex items-center w-full">
+                  <input
+                    type="text"
+                    value={caQuery}
+                    onChange={(e) => {
+                      setCaQuery(e.target.value);
+                      if (searchError) setSearchError(null);
+                    }}
+                    placeholder="Search token CA (0x...)"
+                    autoCapitalize="off"
+                    autoCorrect="off"
+                    spellCheck={false}
+                    enterKeyHint="search"
+                    className="w-full h-12 pl-3.5 pr-22 text-xs sm:text-sm font-ui truncate bg-[rgba(255,255,255,0.96)] text-[#0A0F2E] placeholder:text-[#3B4170] rounded-[16px] border-[2.5px] border-[#0A0F2E] shadow-[4px_4px_0_#050A2E] focus:outline-none focus:ring-2 focus:ring-[#5CE1FF]"
+                  />
+                  <button
+                    type="submit"
+                    disabled={loading || !caQuery.trim()}
+                    className="absolute right-1.5 top-1.5 bottom-1.5 px-3.5 btn-bento btn-cobalt text-xs rounded-[11px] disabled:opacity-50 flex items-center justify-center shrink-0 border-[2px] border-[#0A0F2E] bg-[#1237E8] text-white shadow-[2px_2px_0_#0A0F2E]"
+                  >
+                    {loading ? (
+                      <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                    ) : (
+                      <>
+                        <Search className="w-3.5 h-3.5 mr-1 shrink-0" />
+                        <span>FIND</span>
+                      </>
+                    )}
+                  </button>
+                </div>
+
+                {searchError && (
+                  <div className="mt-2.5 flex items-center gap-1.5 text-xs font-ui font-bold text-[#FF4D6D] bg-[#050A2E]/90 p-2.5 rounded-[12px] border-[2px] border-[#FF4D6D] shadow-[2px_2px_0_#050A2E]">
+                    <AlertCircle className="w-3.5 h-3.5 shrink-0" />
+                    <span>{searchError}</span>
+                  </div>
+                )}
+              </form>
+            </div>
+          </div>
+
+          {/* CONNECT WITH US: 4 bordered icon buttons with light borders & white icons */}
+          <div className="pt-4 border-t-[1.5px] border-white/15 flex flex-wrap items-center justify-center sm:justify-start gap-3 relative z-10">
+            <span className="text-[11px] font-bold font-ui text-[#D6DDFF] uppercase tracking-wider">
+              CONNECT WITH US:
+            </span>
+            <div className="flex items-center gap-2">
+              {twitterUrl && (
+                <a
+                  href={twitterUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-icon bg-white/10 hover:bg-white/20 border-white/40 text-white shadow-[3px_3px_0_#050A2E]"
+                  title="X / Twitter"
+                  aria-label="X (Twitter)"
+                >
+                  <span className="font-ui font-bold text-xs text-white">𝕏</span>
+                </a>
+              )}
+              {telegramUrl && (
+                <a
+                  href={telegramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-icon bg-white/10 hover:bg-white/20 border-white/40 text-white shadow-[3px_3px_0_#050A2E]"
+                  title="Telegram"
+                  aria-label="Telegram"
+                >
+                  <span className="font-ui font-bold text-xs text-white">TG</span>
+                </a>
+              )}
+              <a
+                href={robinhoodExplorerUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-icon bg-white/10 hover:bg-white/20 border-white/40 text-white shadow-[3px_3px_0_#050A2E]"
+                title="Robinhood Explorer"
+                aria-label="Explorer"
+              >
+                <ExternalLink className="w-4 h-4 text-white" />
+              </a>
+              {githubUrl && (
+                <a
+                  href={githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-icon bg-white/10 hover:bg-white/20 border-white/40 text-white shadow-[3px_3px_0_#050A2E]"
+                  title="GitHub"
+                  aria-label="GitHub"
+                >
+                  <span className="font-ui font-bold text-[11px] text-white">GH</span>
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+
+        {/* =========================================================================
+            RIGHT SIDE PANEL (Transparent cell showing continuous halftone bloom, 5 cols)
+           ========================================================================= */}
+        <div className="lg:col-span-5 p-6 sm:p-10 lg:p-12 flex flex-col items-center justify-center relative overflow-hidden min-h-[380px] lg:min-h-full bg-transparent">

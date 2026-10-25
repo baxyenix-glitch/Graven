@@ -1,0 +1,122 @@
+[
+  {
+    "id": "view_test_1792449887122",
+    "graveAddress": "0x9999999999999999999999999999999999999999",
+    "viewerWallet": "0x8888888888888888888888888888888888888888",
+    "timestamp": "2026-10-19T22:44:47.123Z",
+    "isQualified": true,
+    "disqualificationReason": null,
+    "durationSeconds": 10,
+    "rewardAssignedEth": 0.0005
+  },
+  {
+    "id": "view_test_1792450068608",
+    "graveAddress": "0x4f0523974268f52b3d9b7feb40543adc54229935",
+    "viewerWallet": "0x4c871597f9bd5ad37f893b58c475980255966899",
+    "timestamp": "2026-10-19T22:47:48.608Z",
+    "isQualified": true,
+    "disqualificationReason": null,
+    "durationSeconds": 10,
+    "rewardAssignedEth": 0.0005
+  },
+  {
+    "id": "view_test_1792450158219",
+    "graveAddress": "0x659909634b28479bc9d002f05e961ef18800aab6",
+    "viewerWallet": "0x5046d41d1792b8694059c806d77b8880dc680d7c",
+    "timestamp": "2026-10-19T22:49:18.219Z",
+    "isQualified": true,
+    "disqualificationReason": null,
+    "durationSeconds": 10,
+    "rewardAssignedEth": 0.0005
+  },
+  {
+    "id": "view_test_1792459611705",
+    "graveAddress": "0xf224ec10ea9b9bab99fb619b5b2380005bfb4a53",
+    "viewerWallet": "0x5f9984330d001c4970279f6c233c1df6278a91a9",
+    "timestamp": "2026-10-20T01:26:51.705Z",
+    "isQualified": true,
+    "disqualificationReason": null,
+    "durationSeconds": 10,
+    "rewardAssignedEth": 0.0005
+  },
+  {
+    "id": "view_test_1792461347548",
+    "graveAddress": "0x5a9d815bb72b49d685236dc7e2d0b83af644e7f8",
+    "viewerWallet": "0x2a6bdbfeab60de1c3ed0c7efe14ba0461b32be01",
+    "timestamp": "2026-10-20T01:55:47.548Z",
+    "isQualified": true,
+    "disqualificationReason": null,
+    "durationSeconds": 10,
+    "rewardAssignedEth": 0.0005
+  },
+  {
+    "id": "view_test_1792461940261",
+    "graveAddress": "0xeebd2aed83cdd1aed510442cd4f7126abd344417",
+    "viewerWallet": "0xe29ab46684db33c4aaac3b52006a68e385c80c68",
+    "timestamp": "2026-10-20T02:05:40.261Z",
+    "isQualified": true,
+    "disqualificationReason": null,
+    "durationSeconds": 10,
+    "rewardAssignedEth": 0.0005
+  },
+  {
+    "id": "view_test_1792464677695",
+    "graveAddress": "0x888bd4e24950a6ab736d23d6c4667672833cdaf0",
+    "viewerWallet": "0xb824bd7f946a78b66a8caa14cf73d0a864cd46f9",
+    "timestamp": "2026-10-20T02:51:17.695Z",
+    "isQualified": true,
+    "disqualificationReason": null,
+    "durationSeconds": 10,
+    "rewardAssignedEth": 0.0005
+  },
+  {
+    "id": "view_1792508374274_1rb1eq",
+    "graveAddress": "0xe35b3fe45395aef894d0ac00f22937e3e6a65249",
+    "viewerWallet": null,
+    "timestamp": "2026-10-20T14:59:34.274Z",
+    "isQualified": false,
+    "disqualificationReason": "wallet_not_connected",
+    "durationSeconds": 6,
+    "rewardAssignedEth": 0
+  },
+  {
+    "id": "view_1792508452171_yvkdoz",
+    "graveAddress": "0xe35b3fe45395aef894d0ac00f22937e3e6a65249",
+    "viewerWallet": null,
+    "timestamp": "2026-10-20T15:00:52.171Z",
+    "isQualified": false,
+    "disqualificationReason": "wallet_not_connected",
+    "durationSeconds": 6,
+    "rewardAssignedEth": 0
+  },
+  {
+    "id": "view_1792532248974_ce1ju2",
+    "graveAddress": "0xe35b3fe45395aef894d0ac00f22937e3e6a65249",
+    "viewerWallet": null,
+    "timestamp": "2026-10-20T21:37:28.974Z",
+    "isQualified": false,
+    "disqualificationReason": "wallet_not_connected",
+    "durationSeconds": 6,
+    "rewardAssignedEth": 0
+  },
+  {
+    "id": "view_test_1792539217598",
+    "graveAddress": "0x4bf7bcc25decc1ddd98afaa2c6b9f46ffeab7d67",
+    "viewerWallet": "0x8a6730edf14a72e705e9b630dfb099916e814cfd",
+    "timestamp": "2026-10-20T23:33:37.598Z",
+    "isQualified": true,
+    "disqualificationReason": null,
+    "durationSeconds": 10,
+    "rewardAssignedEth": 0.0005
+  },
+  {
+    "id": "view_test_1792539936918",
+    "graveAddress": "0x6e9e62657e8f833e9a38a6e4410689bb8a23792c",
+    "viewerWallet": "0xe58da0b7837b4182053f905be374f0c627813a43",
+    "timestamp": "2026-10-20T23:45:36.918Z",
+    "isQualified": true,
+    "disqualificationReason": null,
+    "durationSeconds": 10,
+    "rewardAssignedEth": 0.0005
+  }
+]

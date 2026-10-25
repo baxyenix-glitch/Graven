@@ -1,0 +1,37 @@
+{
+  "tokensBuried": 1,
+  "totalGraveViews": 13,
+  "ethPaidOut": 0.00075,
+  "holdersRewarded": 1,
+  "buriedToday": 0,
+  "activeGraves": 1,
+  "recentEvents": [
+    {
+      "id": "payout_payout_1792656121890_ky20kh",
+      "type": "CLAIM_PAID",
+      "tokenSymbol": "ETH",
+      "tokenAddress": "0x3114936fe0c4629d6e515cc8f8289b7d504995af",
+      "amountEth": 0.00015,
+      "timestamp": "2026-10-22T08:02:01.890Z",
+      "description": "Payout of 0.0001 ETH completed"
+    },
+    {
+      "id": "payout_payout_1792655606204_7qrrpz",
+      "type": "CLAIM_PAID",
+      "tokenSymbol": "ETH",
+      "tokenAddress": "0x6e34f343438f90ff82619b470ccddf5bcc016f6e",
+      "amountEth": 0.0006,
+      "timestamp": "2026-10-22T07:53:26.204Z",
+      "description": "Payout of 0.0006 ETH completed"
+    },
+    {
+      "id": "burial_0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d_2026-10-22T07:48:12.606Z",
+      "type": "BURIED",
+      "tokenSymbol": "AXO",
+      "tokenAddress": "0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d",
+      "timestamp": "2026-10-22T07:48:12.606Z",
+      "description": "$AXO was laid to rest"
+    }
+  ],
+  "updatedAt": "2026-10-23T04:59:06.521Z"
+}

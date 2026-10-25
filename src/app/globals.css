@@ -1,0 +1,407 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --bg-page: #000000;
+    --text-main: #FFFFFF;
+    --text-muted-light: #8E99C7;
+    --text-muted-dark: #D6DDFF;
+
+    --font-heading: var(--font-archivo), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-body: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-ui: var(--font-mono), monospace;
+    --font-mono: var(--font-mono), monospace;
+
+    /* Canonical Z-Index Scale */
+    --z-content: 10;
+    --z-nav: 50;
+    --z-menu: 60;
+    --z-modal: 70;
+    --z-toast: 80;
+    --z-wallet-modal: 90;
+
+    /* Brand Colors */
+    --color-cobalt: #1237E8;
+    --color-royal: #0A1FC4;
+    --color-midnight: #0A0F2E;
+    --color-sky: #4F8CFF;
+    --color-ice: #BFD8FF;
+    --color-cyan: #5CE1FF;
+    --color-lavender: #D9D2FF;
+    --color-cream: #F6F4FF;
+    --color-white: #FFFFFF;
+    --color-lime: #E4FF6B;
+    --color-bubble: #FF9CCB;
+
+  }
+
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    min-height: 100svh;
+    overflow-x: hidden;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Prevent iOS zoom & optimize touch responsiveness */
+  input, select, textarea, button, a {
+    font-family: inherit;
+    font-size: 16px;
+    touch-action: manipulation;
+  }
+
+  /* Accessible high-contrast focus ring */
+  :focus-visible {
+    outline: 3px solid #5CE1FF;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px #0A0F2E;
+  }
+}
+
+/* ==============================================================================
+   TYPOGRAPHY
+   ============================================================================== */
+.font-heading {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+  text-wrap: balance;
+}
+
+.font-body {
+  font-family: var(--font-body);
+  line-height: 1.65;
+}
+
+.font-ui,
+.font-mono {
+  font-family: var(--font-ui);
+}
+
+/* ==============================================================================
+   FRAME & BENTO SYSTEM
+   ============================================================================== */
+.framed-sheet {
+  background-color: #000000;
+  border: 3px solid #222222;
+  box-shadow: 8px 8px 0 #000000;
+  border-radius: 28px;
+  overflow: clip;
+}
+
+@media (max-width: 768px) {
+  .framed-sheet {
+    box-shadow: 4px 4px 0 #000000;
+    border-radius: 20px;
+  }
+}
+
+/* Bento cells with shared 3px borders */
+.bento-cell {
+  position: relative;
+  background-color: #000000;
+}
+
+/* Cards inside bento cells */
+.bento-card {
+  border: 2px solid #222222;
+  box-shadow: 4px 4px 0 #000000;
+  border-radius: 20px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+:where(.bento-card) {
+  background-color: #0A0A0A;
+  color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .bento-card {
+    border-radius: 18px;
+    box-shadow: 3px 3px 0 #000000;
+  }
+}
+
+@media (hover: hover) {
+  .bento-card:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 5px 5px 0 #000000;
+  }
+}
+
+/* ==============================================================================
+   BUTTONS (Space Mono uppercase bold, 2.5px border, 4px hard shadow)
+   ============================================================================== */
+.btn-bento {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 12.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: 16px;
+  border: 2.5px solid #0A0F2E;
+  box-shadow: 4px 4px 0 #0A0F2E;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.15s ease;
+  cursor: pointer;
+  user-select: none;
+  min-height: 44px;
+  padding: 10px 20px;
+  text-decoration: none;
+  touch-action: manipulation;
+}
+
+@media (hover: hover) {
+  .btn-bento:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 5px 5px 0 #0A0F2E;
+  }
+}
+
+.btn-bento:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 #0A0F2E;
+}
+
+/* Button Variants */
+.btn-primary {
+  background: linear-gradient(135deg, #1237E8 0%, #4F8CFF 100%);
+  color: #FFFFFF;
+}
+
+.btn-cyan {
+  background-color: #5CE1FF;
+  color: #0A0F2E;
+}
+
+.btn-cobalt {
+  background-color: #1237E8;
+  color: #FFFFFF;
+}
+
+.btn-white {
+  background-color: #FFFFFF;
+  color: #0A0F2E;
+}
+
+.btn-lime {
+  background-color: #E4FF6B;
+  color: #0A0F2E;
+}
+
+.btn-ice {
+  background-color: #BFD8FF;
+  color: #0A0F2E;
+}
+
+.btn-ghost {
+  background-color: #FFFFFF;
+  color: #0A0F2E;
+}
+
+/* Icon Buttons (40px rounded squares with 2px border & hard shadow) */
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  border: 2px solid #262626;
+  box-shadow: 3px 3px 0 #000000;
+  background-color: #121212;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.15s ease;
+  touch-action: manipulation;
+}
+
+@media (hover: hover) {
+  .btn-icon:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 4px 0 #000000;
+    background-color: #1E1E1E;
+    border-color: #333333;
+  }
+}
+
+.btn-icon:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 #000000;
+}
+
+/* ==============================================================================
+   INPUTS & CHIPS
+   ============================================================================== */
+.bento-input {
+  border: 2px solid #262626;
+  border-radius: 16px;
+  background-color: #121212;
+  color: #FFFFFF;
+  font-family: var(--font-body);
+  font-size: 16px;
+  padding: 10px 16px;
+  outline: none;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.bento-input::placeholder {
+  color: #737373;
+}
+
+.bento-input:focus {
+  border-color: #5CE1FF;
+  box-shadow: 0 0 0 2px rgba(92, 225, 255, 0.25);
+  outline: none;
+}
+
+/* Tags and chips (bordered pills with Space Mono 11px text) */
+.bento-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  border: 1.5px solid #262626;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background-color: #141414;
+  color: #FFFFFF;
+}
+
+/* High Contrast Muted Text Utilities */
+.text-muted-light {
+  color: #3B4170 !important;
+}
+
+.text-muted-dark {
+  color: #D6DDFF !important;
+}
+
+/* ==============================================================================
+   FULL-BLEED IMAGE HERO & CONTROLS
+   ============================================================================== */
+.hero-section {
+  aspect-ratio: 9 / 16;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
+}
+
+/* Controls Layer Positioning & Animation (Centered in sky gap) */
+.hero-controls {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  top: 34%;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: heroControlsFadeUp 400ms ease-out forwards;
+}
+
+@media (min-width: 768px) {
+  .hero-controls {
+    top: 44.5%;
+  }
+}
+
+@keyframes heroControlsFadeUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 8px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+/* Small, Compact Deep-Blue Bury Button */
+.hero-btn-bury-compact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: linear-gradient(135deg, #1237E8 0%, #0A1FC4 100%);
+  color: #FFFFFF !important;
+  border: 2px solid #000000;
+  box-shadow: 3px 3px 0 #000000;
+  border-radius: 10px;
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 6px 16px;
+  width: auto;
+  min-height: auto;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, filter 0.15s ease;
+  user-select: none;
+  cursor: pointer;
+  touch-action: manipulation;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.hero-btn-bury-compact:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px #5CE1FF, 3px 3px 0 #000000 !important;
+}
+
+@media (hover: hover) {
+  .hero-btn-bury-compact:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 4px 0 #000000;
+    filter: brightness(1.15);
+  }
+}
+
+.hero-btn-bury-compact:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0 #000000;
+}
+
+/* Motion / Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .hero-controls {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: translate(-50%, 0) !important;
+  }
+}

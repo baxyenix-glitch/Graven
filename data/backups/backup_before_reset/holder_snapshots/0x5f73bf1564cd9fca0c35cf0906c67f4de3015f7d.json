@@ -1,0 +1,32 @@
+{
+  "tokenAddress": "0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d",
+  "snapshotTakenAt": "2026-10-21T18:24:52.481Z",
+  "totalOriginalHolders": 2,
+  "eligibleHolders": [
+    {
+      "wallet": "0x6e34f343438f90ff82619b470ccddf5bcc016f6e",
+      "firstBuyTime": "2026-10-21T18:24:52.481Z",
+      "firstBuyTx": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "amountBought": "1000000000",
+      "amountSold": "0",
+      "averageEntryEth": 0.0001,
+      "totalInvestedEth": 0.1,
+      "currentBalance": "1000000000",
+      "pnlEth": -0.1,
+      "snapshotRank": 1
+    },
+    {
+      "wallet": "0x3114936fe0c4629d6e515cc8f8289b7d504995af",
+      "firstBuyTime": "2026-10-22T03:08:36.835Z",
+      "firstBuyTx": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "amountBought": "5000000000000000000000",
+      "amountSold": "0",
+      "averageEntryEth": 0,
+      "totalInvestedEth": 0,
+      "currentBalance": "5000000000000000000000",
+      "pnlEth": 0,
+      "snapshotRank": 2
+    }
+  ],
+  "excludedHolders": []
+}

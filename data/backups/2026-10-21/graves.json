@@ -1,0 +1,28 @@
+[
+  {
+    "id": "0xe35b3fe45395aef894d0ac00f22937e3e6a65249",
+    "tokenAddress": "0xe35b3fe45395aef894d0ac00f22937e3e6a65249",
+    "name": "Graven Token",
+    "symbol": "GRAVEN",
+    "decimals": 18,
+    "logoUrl": "/assets/logo.png",
+    "devWallet": "0xf343ee310ae6379a6af1d95ac0bd9d8c8be4a979",
+    "launchpad": "other",
+    "birthDate": "2026-10-20T14:59:16.462Z",
+    "deathDate": "2026-10-20T14:59:16.462Z",
+    "daysLived": 1,
+    "peakMcapEth": 0,
+    "epitaph": "Here lies a dream",
+    "signature": "0xfeff6941324ffca577685437e1fc099ab6d6867a5a64125e38bbe67c61d2a0ce0811832b4a890972db40ec6208a646172911bbeb04d72c617ecada31179d105b1c",
+    "signedMessage": "Graven Protocol - Token Burial Attestation\n----------------------------------------\nChain ID: 46630\nToken Address: 0xe35b3fe45395aef894d0ac00f22937e3e6a65249\nCreator Wallet: 0xf343ee310ae6379a6af1d95ac0bd9d8c8be4a979\nNonce: graven_1792508343795_3ec9er61\nIssued At: 2026-10-20T14:59:03.815Z\nExpires In: 10 minutes\n\nBy signing, you confirm that you are the creator of this token and wish to lay it to rest under Graven Protocol.",
+    "buriedAt": "2026-10-20T14:59:16.462Z",
+    "buriedBlock": 0,
+    "viewsCount": 15,
+    "qualifiedViewsCount": 0,
+    "totalEthEarned": 0,
+    "totalEthClaimed": 0,
+    "isRisen": false,
+    "risenAt": null,
+    "status": "live"
+  }
+]

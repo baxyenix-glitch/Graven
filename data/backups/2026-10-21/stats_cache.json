@@ -1,0 +1,19 @@
+{
+  "tokensBuried": 1,
+  "totalGraveViews": 15,
+  "ethPaidOut": 0,
+  "holdersRewarded": 0,
+  "buriedToday": 0,
+  "activeGraves": 1,
+  "recentEvents": [
+    {
+      "id": "burial_0xe35b3fe45395aef894d0ac00f22937e3e6a65249_2026-10-20T14:59:16.462Z",
+      "type": "BURIED",
+      "tokenSymbol": "GRAVEN",
+      "tokenAddress": "0xe35b3fe45395aef894d0ac00f22937e3e6a65249",
+      "timestamp": "2026-10-20T14:59:16.462Z",
+      "description": "$GRAVEN was laid to rest"
+    }
+  ],
+  "updatedAt": "2026-10-21T17:28:05.880Z"
+}
