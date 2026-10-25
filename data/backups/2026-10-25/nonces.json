@@ -1,0 +1,30 @@
+[
+  {
+    "nonce": "graven_1792655068768_rqa8eofw",
+    "wallet": "0x6e34f343438f90ff82619b470ccddf5bcc016f6e",
+    "tokenAddress": "0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d",
+    "expiresAt": 1792655668768,
+    "used": true
+  },
+  {
+    "nonce": "graven_1792937749007_fj6pddzf",
+    "wallet": "0x030c537c9a39da376a3215d58009c8580aabf4b9",
+    "tokenAddress": "0xa486e1f9fc7d466a3ea8424f6038e0fa820f203a",
+    "expiresAt": 1792938349008,
+    "used": true
+  },
+  {
+    "nonce": "graven_1792938492483_qd0vwr9d",
+    "wallet": "0x6221e88d61e4ae8a3834d384085712b9c4741f39",
+    "tokenAddress": "0xd5e7454ee00f2035caaffaeb9b9df0a080300fe2",
+    "expiresAt": 1792939092483,
+    "used": true
+  },
+  {
+    "nonce": "graven_1792939638982_m8440608",
+    "wallet": "0x0fcff16da4b5286f82ba68bdddb0c4320a01b835",
+    "tokenAddress": "0xa547680dada119e78b5d34a3369e7f33d38f511c",
+    "expiresAt": 1792940238982,
+    "used": true
+  }
+]

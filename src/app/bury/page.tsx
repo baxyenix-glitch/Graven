@@ -57,13 +57,19 @@ function BuryWizardInner() {
     }
   }, [authenticated, connectedWallet]);
 
-  // If initial token query param passed, fetch it once authenticated
+  // Sync tokenAddress with initialToken query param if provided, but DO NOT skip Step 2 holding gate
   useEffect(() => {
-    if (initialToken && isAddress(initialToken, { strict: false }) && step >= 2) {
+    if (initialToken && isAddress(initialToken, { strict: false })) {
       setTokenAddress(initialToken);
-      lookupToken(initialToken);
     }
-  }, [initialToken, step]);
+  }, [initialToken]);
+
+  // Enforce holding gate requirement: prevent advancing past Step 2 if balance is insufficient
+  useEffect(() => {
+    if (authenticated && connectedWallet && !balanceLoading && gravenBalance < minGravenHold && step > 2) {
+      setStep(2);
+    }
+  }, [authenticated, connectedWallet, balanceLoading, gravenBalance, step]);
 
   const checkUserGravenBalance = async () => {
     if (!connectedWallet) return;
@@ -351,6 +357,20 @@ function BuryWizardInner() {
             <p className="font-body text-sm text-[#D4D4D4] mb-6 leading-relaxed">
               To prevent spam burials and maintain tomb quality, token creators must hold at least 10,000 $GRAVEN tokens on Robinhood Chain.
             </p>
+
+            {initialToken && isAddress(initialToken, { strict: false }) && (
+              <div className="p-4 bg-[#141414] rounded-[16px] border border-[#262626] mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-[#5CE1FF]" />
+                  <span className="text-xs font-mono font-bold text-[#A3A3A3] uppercase">
+                    QUEUED TOKEN FROM SEARCH:
+                  </span>
+                </div>
+                <span className="text-xs font-mono font-bold text-[#5CE1FF] break-all">
+                  {initialToken}
+                </span>
+              </div>
+            )}
 
             <div className="p-5 bg-[#121212] rounded-[16px] border border-[#262626] mb-6">
               <div className="flex justify-between items-center mb-2 text-xs font-mono font-bold">

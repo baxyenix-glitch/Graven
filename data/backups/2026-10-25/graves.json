@@ -1,0 +1,28 @@
+[
+  {
+    "id": "0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d",
+    "tokenAddress": "0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d",
+    "name": "Axo Token",
+    "symbol": "AXO",
+    "decimals": 18,
+    "logoUrl": "/assets/logo.png",
+    "devWallet": "0x6e34f343438f90ff82619b470ccddf5bcc016f6e",
+    "launchpad": "other",
+    "birthDate": "2026-10-22T07:48:12.606Z",
+    "deathDate": "2026-10-22T07:48:12.606Z",
+    "daysLived": 1,
+    "peakMcapEth": 0,
+    "epitaph": "Dream",
+    "signature": "0x58f36c3d1eeda9280b6fad1f171f0d89753911ec6546fdd3fd6f0dc04bcadc2343eea411a13225cbb6d03b721b6061ef434be8f4d4a919cff8888d1183e544711c",
+    "signedMessage": "Graven Protocol - Token Burial Attestation\n----------------------------------------\nChain ID: 46630\nToken Address: 0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d\nCreator Wallet: 0x6e34f343438f90ff82619b470ccddf5bcc016f6e\nNonce: graven_1792655068768_rqa8eofw\nIssued At: 2026-10-22T07:44:28.777Z\nExpires In: 10 minutes\n\nBy signing, you confirm that you are the creator of this token and wish to lay it to rest under Graven Protocol.",
+    "buriedAt": "2026-10-22T07:48:12.606Z",
+    "buriedBlock": 0,
+    "viewsCount": 13,
+    "qualifiedViewsCount": 2,
+    "totalEthEarned": 0.00085,
+    "totalEthClaimed": 0,
+    "isRisen": false,
+    "risenAt": null,
+    "status": "live"
+  }
+]

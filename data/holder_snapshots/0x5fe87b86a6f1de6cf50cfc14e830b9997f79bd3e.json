@@ -1,0 +1,25 @@
+{
+  "tokenAddress": "0x5fe87b86a6f1de6cf50cfc14e830b9997f79bd3e",
+  "snapshotTakenAt": "2026-10-25T14:28:12.530Z",
+  "totalOriginalHolders": 2,
+  "eligibleHolders": [
+    {
+      "wallet": "0xf3f400d12b64268be65365f887dbadfcc7791612",
+      "firstBuyTime": "2026-03-01T00:00:00Z",
+      "firstBuyTx": "0x123",
+      "amountBought": "50000",
+      "amountSold": "0",
+      "averageEntryEth": 0.00002,
+      "totalInvestedEth": 1,
+      "currentBalance": "50000",
+      "pnlEth": -1,
+      "snapshotRank": 1
+    }
+  ],
+  "excludedHolders": [
+    {
+      "wallet": "0x010c6c1028f64516b4de72df9ddc7fbd091c94c0",
+      "reason": "Funded directly by dev wallet within 2 hops"
+    }
+  ]
+}

@@ -128,5 +128,35 @@
     "disqualificationReason": "wallet_not_connected",
     "durationSeconds": 6,
     "rewardAssignedEth": 0
+  },
+  {
+    "id": "view_test_1792937749290",
+    "graveAddress": "0xeaefcc11e26a5c05033557483953b551129e6485",
+    "viewerWallet": "0x433c5144bd043c2450f284bed07b8a140fcffb67",
+    "timestamp": "2026-10-25T14:15:49.290Z",
+    "isQualified": true,
+    "disqualificationReason": null,
+    "durationSeconds": 10,
+    "rewardAssignedEth": 0.0005
+  },
+  {
+    "id": "view_test_1792938492540",
+    "graveAddress": "0xa8e116d6e2e86bfd450871c481556b0844236835",
+    "viewerWallet": "0x251169255455ddaf86ab3b537ee4e1a6bb6576ae",
+    "timestamp": "2026-10-25T14:28:12.540Z",
+    "isQualified": true,
+    "disqualificationReason": null,
+    "durationSeconds": 10,
+    "rewardAssignedEth": 0.0005
+  },
+  {
+    "id": "view_test_1792939639058",
+    "graveAddress": "0x4db8abd12ba29d7259150c050b1ba7c013a1802d",
+    "viewerWallet": "0xcf92a2fc5c7760780758d882534f362c52cd9123",
+    "timestamp": "2026-10-25T14:47:19.058Z",
+    "isQualified": true,
+    "disqualificationReason": null,
+    "durationSeconds": 10,
+    "rewardAssignedEth": 0.0005
   }
 ]

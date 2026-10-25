@@ -1,0 +1,162 @@
+[
+  {
+    "id": "view_1792655321340_mjp80o",
+    "graveAddress": "0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d",
+    "viewerWallet": "0x6e34f343438f90ff82619b470ccddf5bcc016f6e",
+    "timestamp": "2026-10-22T07:48:41.340Z",
+    "isQualified": true,
+    "disqualificationReason": null,
+    "durationSeconds": 6,
+    "rewardAssignedEth": 0.0005
+  },
+  {
+    "id": "view_1792655365406_uakm3u",
+    "graveAddress": "0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d",
+    "viewerWallet": "0x3114936fe0c4629d6e515cc8f8289b7d504995af",
+    "timestamp": "2026-10-22T07:49:25.406Z",
+    "isQualified": true,
+    "disqualificationReason": null,
+    "durationSeconds": 6,
+    "rewardAssignedEth": 0.0005
+  },
+  {
+    "id": "view_1792655426054_58dex2",
+    "graveAddress": "0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d",
+    "viewerWallet": "0xf343ee310ae6379a6af1d95ac0bd9d8c8be4a979",
+    "timestamp": "2026-10-22T07:50:26.054Z",
+    "isQualified": false,
+    "disqualificationReason": "not_original_holder",
+    "durationSeconds": 6,
+    "rewardAssignedEth": 0
+  },
+  {
+    "id": "view_1792655849834_w5o3t9",
+    "graveAddress": "0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d",
+    "viewerWallet": "0xf343ee310ae6379a6af1d95ac0bd9d8c8be4a979",
+    "timestamp": "2026-10-22T07:57:29.834Z",
+    "isQualified": false,
+    "disqualificationReason": "not_original_holder",
+    "durationSeconds": 6,
+    "rewardAssignedEth": 0
+  },
+  {
+    "id": "view_1792655974745_z4gt0a",
+    "graveAddress": "0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d",
+    "viewerWallet": "0xf343ee310ae6379a6af1d95ac0bd9d8c8be4a979",
+    "timestamp": "2026-10-22T07:59:34.745Z",
+    "isQualified": false,
+    "disqualificationReason": "not_original_holder",
+    "durationSeconds": 6,
+    "rewardAssignedEth": 0
+  },
+  {
+    "id": "view_1792656048308_9mstba",
+    "graveAddress": "0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d",
+    "viewerWallet": "0x3114936fe0c4629d6e515cc8f8289b7d504995af",
+    "timestamp": "2026-10-22T08:00:48.309Z",
+    "isQualified": false,
+    "disqualificationReason": "already_viewed_in_24h",
+    "durationSeconds": 6,
+    "rewardAssignedEth": 0
+  },
+  {
+    "id": "view_1792657496837_lt6ogg",
+    "graveAddress": "0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d",
+    "viewerWallet": "0x3114936fe0c4629d6e515cc8f8289b7d504995af",
+    "timestamp": "2026-10-22T08:24:56.837Z",
+    "isQualified": false,
+    "disqualificationReason": "already_viewed_in_24h",
+    "durationSeconds": 6,
+    "rewardAssignedEth": 0
+  },
+  {
+    "id": "view_1792680594587_b9divu",
+    "graveAddress": "0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d",
+    "viewerWallet": "0xf343ee310ae6379a6af1d95ac0bd9d8c8be4a979",
+    "timestamp": "2026-10-22T14:49:54.587Z",
+    "isQualified": false,
+    "disqualificationReason": "not_original_holder",
+    "durationSeconds": 6,
+    "rewardAssignedEth": 0
+  },
+  {
+    "id": "view_1792681139011_3s823b",
+    "graveAddress": "0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d",
+    "viewerWallet": "0x6e34f343438f90ff82619b470ccddf5bcc016f6e",
+    "timestamp": "2026-10-22T14:58:59.011Z",
+    "isQualified": false,
+    "disqualificationReason": "already_viewed_in_24h",
+    "durationSeconds": 6,
+    "rewardAssignedEth": 0
+  },
+  {
+    "id": "view_1792683274182_7p568v",
+    "graveAddress": "0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d",
+    "viewerWallet": null,
+    "timestamp": "2026-10-22T15:34:34.182Z",
+    "isQualified": false,
+    "disqualificationReason": "wallet_not_connected",
+    "durationSeconds": 6,
+    "rewardAssignedEth": 0
+  },
+  {
+    "id": "view_1792726416500_811gjd",
+    "graveAddress": "0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d",
+    "viewerWallet": "0xf343ee310ae6379a6af1d95ac0bd9d8c8be4a979",
+    "timestamp": "2026-10-23T03:33:36.500Z",
+    "isQualified": false,
+    "disqualificationReason": "not_original_holder",
+    "durationSeconds": 6,
+    "rewardAssignedEth": 0
+  },
+  {
+    "id": "view_1792729361708_9e5231",
+    "graveAddress": "0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d",
+    "viewerWallet": "0x6e34f343438f90ff82619b470ccddf5bcc016f6e",
+    "timestamp": "2026-10-23T04:22:41.708Z",
+    "isQualified": false,
+    "disqualificationReason": "already_viewed_in_24h",
+    "durationSeconds": 6,
+    "rewardAssignedEth": 0
+  },
+  {
+    "id": "view_1792731546508_sd9ut4",
+    "graveAddress": "0x5f73bf1564cd9fca0c35cf0906c67f4de3015f7d",
+    "viewerWallet": null,
+    "timestamp": "2026-10-23T04:59:06.509Z",
+    "isQualified": false,
+    "disqualificationReason": "wallet_not_connected",
+    "durationSeconds": 6,
+    "rewardAssignedEth": 0
+  },
+  {
+    "id": "view_test_1792937749290",
+    "graveAddress": "0xeaefcc11e26a5c05033557483953b551129e6485",
+    "viewerWallet": "0x433c5144bd043c2450f284bed07b8a140fcffb67",
+    "timestamp": "2026-10-25T14:15:49.290Z",
+    "isQualified": true,
+    "disqualificationReason": null,
+    "durationSeconds": 10,
+    "rewardAssignedEth": 0.0005
+  },
+  {
+    "id": "view_test_1792938492540",
+    "graveAddress": "0xa8e116d6e2e86bfd450871c481556b0844236835",
+    "viewerWallet": "0x251169255455ddaf86ab3b537ee4e1a6bb6576ae",
+    "timestamp": "2026-10-25T14:28:12.540Z",
+    "isQualified": true,
+    "disqualificationReason": null,
+    "durationSeconds": 10,
+    "rewardAssignedEth": 0.0005
+  },
+  {
+    "id": "view_test_1792939639058",
+    "graveAddress": "0x4db8abd12ba29d7259150c050b1ba7c013a1802d",
+    "viewerWallet": "0xcf92a2fc5c7760780758d882534f362c52cd9123",
+    "timestamp": "2026-10-25T14:47:19.058Z",
+    "isQualified": true,
+    "disqualificationReason": null,
+    "durationSeconds": 10,
+    "rewardAssignedEth": 0.0005
+  }
+]

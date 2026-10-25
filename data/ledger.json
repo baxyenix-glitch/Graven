@@ -82,5 +82,77 @@
     "viewId": null,
     "payoutId": "payout_1792656121890_ky20kh",
     "notes": "Payout sent via tx 0x530ff9cc94d69d25cc4a253733d4cdb5dab8c21cd1448c90d118f40baca01ac8"
+  },
+  {
+    "id": "acc_test_1792937749284_1",
+    "timestamp": "2026-10-25T14:15:49.284Z",
+    "type": "ACCRUAL",
+    "recipient": "0xe9dff538e0edcabf0b444913830fe09379342157",
+    "role": "DEV",
+    "graveAddress": "0x8007e834d9b23d21032e95fa8d278354122f5f13",
+    "amountEth": 0.05,
+    "viewId": null,
+    "payoutId": null,
+    "notes": "Test dev reward"
+  },
+  {
+    "id": "pay_test_1792937749315_2",
+    "timestamp": "2026-10-25T14:15:49.315Z",
+    "type": "CLAIM_PAID",
+    "recipient": "0xe9dff538e0edcabf0b444913830fe09379342157",
+    "role": "DEV",
+    "graveAddress": "0x8007e834d9b23d21032e95fa8d278354122f5f13",
+    "amountEth": 0.02,
+    "viewId": null,
+    "payoutId": "payout_1",
+    "notes": "Claim paid"
+  },
+  {
+    "id": "acc_test_1792938492516_1",
+    "timestamp": "2026-10-25T14:28:12.516Z",
+    "type": "ACCRUAL",
+    "recipient": "0x3f2d2faa0eaf1c7ba1f000fb70221a17ff84a6bd",
+    "role": "DEV",
+    "graveAddress": "0xc5c97194c09c1a6d9c8caa489a2d32cfee111e0a",
+    "amountEth": 0.05,
+    "viewId": null,
+    "payoutId": null,
+    "notes": "Test dev reward"
+  },
+  {
+    "id": "pay_test_1792938492533_2",
+    "timestamp": "2026-10-25T14:28:12.533Z",
+    "type": "CLAIM_PAID",
+    "recipient": "0x3f2d2faa0eaf1c7ba1f000fb70221a17ff84a6bd",
+    "role": "DEV",
+    "graveAddress": "0xc5c97194c09c1a6d9c8caa489a2d32cfee111e0a",
+    "amountEth": 0.02,
+    "viewId": null,
+    "payoutId": "payout_1",
+    "notes": "Claim paid"
+  },
+  {
+    "id": "acc_test_1792939639076_1",
+    "timestamp": "2026-10-25T14:47:19.076Z",
+    "type": "ACCRUAL",
+    "recipient": "0x33f1331fe50342d936b4ac7b3188fb4e26e8329d",
+    "role": "DEV",
+    "graveAddress": "0x7a45fa93a9d2c5d43d7548641c35d0e26790a51f",
+    "amountEth": 0.05,
+    "viewId": null,
+    "payoutId": null,
+    "notes": "Test dev reward"
+  },
+  {
+    "id": "pay_test_1792939639110_2",
+    "timestamp": "2026-10-25T14:47:19.110Z",
+    "type": "CLAIM_PAID",
+    "recipient": "0x33f1331fe50342d936b4ac7b3188fb4e26e8329d",
+    "role": "DEV",
+    "graveAddress": "0x7a45fa93a9d2c5d43d7548641c35d0e26790a51f",
+    "amountEth": 0.02,
+    "viewId": null,
+    "payoutId": "payout_1",
+    "notes": "Claim paid"
   }
 ]

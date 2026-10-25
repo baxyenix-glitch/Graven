@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rewardDevPct": 60,
+  "rewardHoldersPct": 30,
+  "rewardPlatformPct": 10,
+  "rewardEthPerQualifiedView": 0.0005,
+  "dailyCapPerWalletEth": 0.05,
+  "dailyCapPerGraveEth": 0.25,
+  "dailyCapGlobalEth": 2,
+  "minClaimThresholdEth": 0.0001,
+  "minGravenHold": 10000,
+  "deadMinDays": 7,
+  "deadMcapDropPct": 85,
+  "isPaused": false,
+  "testnetDevMode": true,
+  "updatedAt": "2026-10-19T22:24:21.536Z"
+}
