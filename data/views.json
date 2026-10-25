@@ -158,5 +158,15 @@
     "disqualificationReason": null,
     "durationSeconds": 10,
     "rewardAssignedEth": 0.0005
+  },
+  {
+    "id": "view_test_1792970974849",
+    "graveAddress": "0xe468ed40949b2493951a6ca31ca7ca0c81beabe2",
+    "viewerWallet": "0x741836cd066ecddb7c9f8d3afcf507afcf7c3ceb",
+    "timestamp": "2026-10-25T23:29:34.849Z",
+    "isQualified": true,
+    "disqualificationReason": null,
+    "durationSeconds": 10,
+    "rewardAssignedEth": 0.0005
   }
 ]

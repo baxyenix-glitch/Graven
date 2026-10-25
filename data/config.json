@@ -12,6 +12,6 @@
   "deadMinDays": 7,
   "deadMcapDropPct": 85,
   "isPaused": false,
-  "testnetDevMode": true,
+  "testnetDevMode": false,
   "updatedAt": "2026-10-19T22:24:21.536Z"
 }

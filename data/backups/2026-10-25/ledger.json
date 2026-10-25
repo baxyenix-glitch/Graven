@@ -154,5 +154,29 @@
     "viewId": null,
     "payoutId": "payout_1",
     "notes": "Claim paid"
+  },
+  {
+    "id": "acc_test_1792970974841_1",
+    "timestamp": "2026-10-25T23:29:34.841Z",
+    "type": "ACCRUAL",
+    "recipient": "0x326e2afdcbe9cb6a7761de0c379433c72ad4f2f4",
+    "role": "DEV",
+    "graveAddress": "0x2d64bfca2f5a0bed55bc9b348268e991a976a5bd",
+    "amountEth": 0.05,
+    "viewId": null,
+    "payoutId": null,
+    "notes": "Test dev reward"
+  },
+  {
+    "id": "pay_test_1792970974862_2",
+    "timestamp": "2026-10-25T23:29:34.862Z",
+    "type": "CLAIM_PAID",
+    "recipient": "0x326e2afdcbe9cb6a7761de0c379433c72ad4f2f4",
+    "role": "DEV",
+    "graveAddress": "0x2d64bfca2f5a0bed55bc9b348268e991a976a5bd",
+    "amountEth": 0.02,
+    "viewId": null,
+    "payoutId": "payout_1",
+    "notes": "Claim paid"
   }
 ]
